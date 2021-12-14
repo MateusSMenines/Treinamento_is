@@ -1,12 +1,12 @@
-From python:3.7 
+From python:3.7-alpine 
 
 WORKDIR /app
-COPY /home/mateussobrinho/ProjetoIS/src/robot/robot.py /app
-COPY /home/mateussobrinho/ProjetoIS/src/robot/RequisicaoRobo_pb2.py /app
-COPY /home/mateussobrinho/ProjetoIS/src/robot/config.json /app
+COPY robot.py /app
+COPY RequisicaoRobo_pb2.py /app
+COPY config.json /app
 COPY requirements.txt /app
 
 RUN pip install -r requirements.txt
 RUN pip install --upgrade protobuf
 
-
+CMD python3 robot.py

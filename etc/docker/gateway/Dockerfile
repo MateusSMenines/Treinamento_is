@@ -1,4 +1,4 @@
-From python:3.7 
+From python:3.7-alpine
 
 WORKDIR /app
 COPY gateway.py /app

@@ -3,7 +3,7 @@
 ### Para rodar o o container do Rabbitmq use:
 
 ```
-docker run -d --rm -p 5672:5672 -p 15672:15672 rabbitmq:3.7.6-management
+sudo docker run -d --rm -p 5672:5672 -p 15672:15672 rabbitmq:3.7.6-management
 ```
 
 ### Rodando o GATEWAY:
